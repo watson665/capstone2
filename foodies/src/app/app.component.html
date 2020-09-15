@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>614Foodies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <div class="header-logo">
+      <img src="assets/img/614Foodies_Logo.png"/>  
+  </div>      
+    <p>614Foodies offers a unique experience for food lovers by providing information on the best food trucks in Columbus.</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#"><i class="glyphicon glyphicon-cutlery"></i></a></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/american">American</a></li>
+        <li><a routerLink="/bbq">BBQ</a></li>
+        <li><a routerLink="/breakfast">Breakfast</a></li>
+        <li><a routerLink="/dessert">Dessert</a></li>
+        <li><a routerLink="healthy">Healthy</a></li>
+        <li><a routerLink="international">International</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- 
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        -->
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>
+</html>
+
+
+<router-outlet></router-outlet>
+
+
+
+<!-- Routing Links that can be used to change the components
+<ul>
+  <li><a routerLink=""></a>Home</li>
+  <li><a routerLink=""></a>Breakfast</li>
+  <li><a routerLink=""></a>American</li>
+  <li><a routerLink=""></a>BBQ</li>
+  <li><a routerLink=""></a>Healthy</li>
+  <li><a routerLink=""></a>app-dessert</li>
+  <li><a routerLink=""></a></li>
+</ul>
+<app-home></app-home>
+<app-breakfast></app-breakfast>
+<app-american></app-american>
+<app-bbq></app-bbq>
+<app-healthy></app-healthy>
+<app-dessert></app-dessert>
+<router-outlet></router-outlet>
+-->

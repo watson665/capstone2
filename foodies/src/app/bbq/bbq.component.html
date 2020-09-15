@@ -1,0 +1,41 @@
+<!-- 
+<div class="header-logo">
+    <img src="assets/img/614Foodies_Logo.png"/>  
+</div>
+<div class="cuisine-bbq">
+    <h1>BBQ</h1>
+</div>
+<div class="foodtrucks">
+    <button type="button" class="btn-lg btn-link" style= text-align:center>Bob's Backyard BBQ</button>
+        Array of Objects
+        Yelp Rating 
+        Food Truck Image
+        URL to website or social media
+    
+    <br>
+    <button type="button" class="btn-lg btn-link" style= text-align:center>Ray Ray's Hog Pit</button>
+    <br>
+    <button type="button" class="btn-lg btn-link" style= text-align:center>SmokeOut BBQ</button>
+    <br>
+    <button type="button" class="btn-lg btn-link" style= text-align:center>OD on BBQ</button>
+    <br>
+    <button type="button" class="btn-lg btn-link" style= text-align:center>Legacy Smokehouse</button>
+</div>
+-->
+<div>
+    <ul>
+     <li *ngFor="let bbqs of bbq" (click)="displayFoodTruckInfo(bbqs)">
+     {{bbqs.name}}
+     <br>
+     </li>
+     </ul>
+</div>
+
+<div *ngIf="currentFoodTruck">
+    <h1>{{currentFoodTruck.name}}</h1>
+    <img src={{currentFoodTruck.image}}>
+    <br>
+    <a href={{currentFoodTruck.yelp}}>Yelp Reviews</a>
+    <br>
+    <a href={{currentFoodTruck.website}}>Social Media</a>
+</div>

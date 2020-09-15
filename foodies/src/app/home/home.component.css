@@ -1,0 +1,20 @@
+.panel-primary>.panel-heading {
+    color: #ffffff;
+    background-color: #f1c431;
+    border-color: #ffffff;
+    text-align: center;
+}
+.panel-primary>.panel-body {
+    display:block;
+    max-width: 100%;
+    height: 350px;
+}
+.panel-footer {
+    padding: 10px 15px;
+    background-color: #d4562a;
+    color: #ffffff;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-align: center;
+}

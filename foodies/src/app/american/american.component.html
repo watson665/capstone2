@@ -1,0 +1,55 @@
+
+<!-- 
+<div class="cuisine-american">
+    <h1>American</h1>
+</div>
+<div class="foodtrucks">
+    <button type="button" class="btn-lg btn-link" style= text-align:center>Hot Mess Food Truck</button>
+    -->
+    <!-- 
+        Array of Objects
+        Yelp Rating 
+        Food Truck Image
+        URL to website or social media
+    -->
+<!-- 
+    <br>
+    <button type="button" class="btn-lg btn-link" style= text-align:center>The Cheesy Truck</button>
+    <br>
+    <button type="button" class="btn-lg btn-link" style= text-align:center>The Tasty Good</button>
+    <br>
+</div>
+
+
+<ul>
+    <li *ngFor="let americans of american"
+    (click)="chooseTruck(american)">
+    {{americans.name}},
+    {{americans.yelp}},
+</li>
+</ul>
+
+<div *ngIf="truck">
+   <h5>{{truck.yelp}}</h5>
+   <h5>{{truck.name}}</h5>
+</div>
+
+-->
+<div>
+    <ul>
+     <li *ngFor="let americans of american" (click)="displayFoodTruckInfo(americans)">
+     {{americans.name}}
+     <br>
+     </li>
+     </ul>
+</div>
+
+<div *ngIf="currentFoodTruck">
+    <h1>{{currentFoodTruck.name}}</h1>
+    <img src={{currentFoodTruck.image}}>
+    <br>
+    <a href={{currentFoodTruck.yelp}}>Yelp Reviews</a>
+    <br>
+    <a href={{currentFoodTruck.website}}>Social Media</a>
+</div>
+
